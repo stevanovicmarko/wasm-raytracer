@@ -1,0 +1,19 @@
+{
+  "name": "wasm-raytracer",
+  "version": "0.1",
+  "author": {
+    "name": "Marko Stevanović",
+    "email": "stevanovicmarko@gmail.com"
+  },
+  "main": "index.ts",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^2.9.1",
+    "vite-plugin-wasm-pack": "^0.1.10"
+  },
+  "scripts": {
+    "wasm": "wasm-pack build rust-wasm-raytracer --target web",
+    "dev": "vite",
+    "build": "vite build"
+  }
+}

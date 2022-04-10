@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WASM Tracer</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./main.css"/>
+    <script type="module" src="/src/index.ts"></script>
+  </head>
+  <body>
+  <div id="root">
+    <fieldset id="renderSettings">
+
+      <legend>Render settings</legend>
+
+      <div>
+        <label for="canvasWidth">Canvas Width:</label>
+        <input type="number" id="canvasWidth" name="width"
+               placeholder="800" min="240" step="5" value="800"/>
+      </div>
+
+      <div>
+        <label for="canvasWidth">Canvas Height:</label>
+        <input type="number" id="canvasHeight" name="height"
+               placeholder="500" min="240" step="5" value="500"/>
+      </div>
+      <label for="raysPerPixel">Rays per pixel:</label>
+      <div id="rays-settings">
+        <input type="range" id="raysPerPixel" name="raysPerPixel"
+               min="8" max="255" value="16" step="1"/>
+        <span id="samplesLabel">16</span>
+      </div>
+
+      <label for="scene-type">Scene type:</label>
+      <div id="scene-type">
+        <div>
+          <input type="radio" id="predefined-scene" name="scene-select" checked/>
+          <label for="predefined-scene">Predefined scene</label>
+        </div>
+        <div>
+          <input type="radio" id="random-scene" name="scene-select"/>
+          <label for="random-scene">Random scene</label>
+        </div>
+      </div>
+      <label for="sampling-type">Sampling type:</label>
+      <div id="sampling-type">
+        <div>
+          <input type="radio" id="jittered-sampling" name="sampler-select" checked/>
+          <label for="random-scene">Jittered sampling</label>
+        </div>
+        <div>
+          <input type="radio" id="uniform-sampling" name="sampler-select" />
+          <label for="predefined-scene">Uniform sampling</label>
+        </div>
+      </div>
+      <div>
+        <div>
+          <button id="renderButton">Render</button>
+        </div>
+        <div>
+          <span id="renderTime"></span>
+        </div>
+      </div>
+    </fieldset>
+    <canvas id="canvas" width="720" height="405">
+    </canvas>
+  </div>
+  </body>
+</html>

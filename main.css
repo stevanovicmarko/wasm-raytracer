@@ -1,0 +1,63 @@
+body, html {
+    background-color: ghostwhite;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 0.9rem;
+}
+
+#root {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#canvas {
+    border: 1px solid gray;
+    background-color: aliceblue;
+    border-radius: 2px;
+}
+
+#renderSettings {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    min-width: 190px;
+}
+
+#renderSettings label {
+    margin-top: 5px;
+}
+
+#rays-settings {
+    display: flex;
+}
+
+input[type="number"] {
+    display: inherit;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: center;
+    padding: auto 0;
+    margin: auto 0;
+}
+
+#renderSettings button {
+    margin-top: 5px;
+}
+
+#renderTime {
+    display: block;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+#scene-type > div, #sampling-type > div {
+    margin: 4px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+label {
+    
+}
