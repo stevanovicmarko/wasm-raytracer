@@ -1,15 +1,15 @@
-# wasm-based raytracer written in rust
+# Wasm-based raytracer written in Rust
 
 ![Screenshot](screenshot1.png)
 
 ![Screenshot](screenshot2.png)
 
-A simple raytracer written in the Rust programming language. Relies on web assembly support in the browser.
+A simple raytracer written in the Rust programming language. Requires support for web assembly in the browser.
 
 To run it, you'll need [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) or [yarn](https://classic.yarnpkg.com/en/).
 To build the wasm binaries, you'll need the [rustc compiler](https://www.rust-lang.org/learn/get-started), [rustup tool](https://rustup.rs/) and [wasm-pack](https://github.com/rustwasm/wasm-pack).
 
-First, open the project folder inside the terminal and then run:
+First, open terminal in the project folder and then run:
 ````sh
 npm install
 ````
